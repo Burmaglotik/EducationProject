@@ -57,3 +57,4 @@ if a + b + c == d + e + f:
     print('Счастливый')
 else:
     print('Обычный')
+print('OK')
