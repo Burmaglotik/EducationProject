@@ -44,7 +44,7 @@ if 0 <= n <= 1000:
         print(n, 'программист')
     elif 2 <= n % 10 <= 4:
         print (n, 'программиста')
-'''
+
 
 ticket = int(input())
 a = ticket // 100000
@@ -57,4 +57,30 @@ if a + b + c == d + e + f:
     print('Счастливый')
 else:
     print('Обычный')
-print('OK')
+
+
+s = 0
+i = 1
+while i != 0:
+    i = int(input())
+    s += i
+print(s)
+
+
+a = int(input())
+b = int(input())
+d = 1
+while not (d % a == 0 and d % b == 0):
+    d += 1
+print(d)
+'''
+
+
+while True:
+    num = int(input())
+    if num < 10:
+        continue
+    elif num > 100:
+        break
+    else:
+        print(num)
