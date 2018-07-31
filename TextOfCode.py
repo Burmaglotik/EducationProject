@@ -73,7 +73,7 @@ d = 1
 while not (d % a == 0 and d % b == 0):
     d += 1
 print(d)
-'''
+
 
 
 while True:
@@ -84,3 +84,29 @@ while True:
         break
     else:
         print(num)
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print('', end='\t')
+for i in range(c, d + 1):
+    print(i, end='\t')
+print()
+for i in range(a, b + 1):
+    print(i, end='\t')
+    for j in range(c, d + 1):
+        print(i * j, end='\t')
+    print()
+'''
+
+a = int(input())
+b = int(input())
+s = 0
+count = 0
+for i in range(a, b + 1):
+    if i % 3 == 0:
+        s += i
+        count += 1
+print(s / count)
