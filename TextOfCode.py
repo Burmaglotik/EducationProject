@@ -99,7 +99,7 @@ for i in range(a, b + 1):
     for j in range(c, d + 1):
         print(i * j, end='\t')
     print()
-'''
+
 
 a = int(input())
 b = int(input())
@@ -110,3 +110,29 @@ for i in range(a, b + 1):
         s += i
         count += 1
 print(s / count)
+
+
+
+sostav = input()
+print((sostav.lower().count('g') + sostav.lower().count('c')) * 100 / len(sostav))
+'''
+
+
+gna = input()
+i = 0
+while i < len(gna):
+    cnt = 1
+    for j in range(i + 1, len(gna)):
+        if gna[j] == gna[i]:
+            cnt += 1
+        else:
+            break
+    if cnt > 1:
+        print(gna[i], end='')
+        print(cnt, end='')
+        i += cnt
+    else:
+        print(gna[i], end='')
+        print(cnt, end='')
+        i += 1
+
